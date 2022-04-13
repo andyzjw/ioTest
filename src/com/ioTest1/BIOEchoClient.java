@@ -22,7 +22,7 @@ public class BIOEchoClient {
 			Scanner scanner = new Scanner(client.getInputStream());// 获取服务器端的响应数据
 			scanner.useDelimiter("\n");
 			PrintStream out = new PrintStream(client.getOutputStream()); // 向服务器端发送信息内容
- 			
+ 			System.out.println("");
 			boolean flag = true;
 			while (flag) {
 				String inputData = InputUtil.getString("请输入要发送的内容：").trim();
